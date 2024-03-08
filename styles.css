@@ -1,0 +1,236 @@
+/* All Pages */
+:root {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #6d755c;
+    --text-primary: #000;
+    --text-secondary: #444;
+    --text-tertiary: #8C8674;
+    --color2: #9acd70;
+    --color1: #A68C5B;
+    --border-light: #929b78;
+    --highlight: #f0ede4;
+}
+
+body {
+    background-color: var(--bg-secondary);
+    margin: 0;
+    font-family: "Cutive Mono", monospace;
+}
+
+.content {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: var(--bg-primary);
+    border-radius: 0.2rem;
+    padding: 1rem 0 2rem;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.page-header {
+    margin: 0 auto 2rem;
+    padding: 0 8rem;
+}
+    .page-header h1, p, em {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+        width: fit-content;
+        box-sizing: border-box;
+
+    }
+    .page-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.4rem;
+    }
+    .page-header em,
+    .page-header p {
+        color: var(--text-secondary);
+        font-size: 1.5rem;
+    }
+    .page-header p {
+        padding: 0;
+    }
+    .page-header em {
+        display: block;
+    }
+
+.liney-line {
+    height: 2px;
+    margin: 0.8rem -3rem 1.8rem;
+    background-color: var(--text-secondary);
+    border-radius: 2px;
+}
+
+#footer {
+    padding: 1rem 0;
+}
+
+.footer-content {
+    padding: 0.5rem 0;
+}
+    .footer-links {
+        padding-left: 4rem;
+    }
+    .footer-content nav > ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        /*gap: 5rem;*/
+    }
+    .footer-content h3 {
+        margin: 0.3rem 0;
+        width: min-content;
+        font-size: 1.25rem;
+    }
+    .footer-content ul {
+        padding: 0;
+        margin: 0;
+    }
+    .footer-content li,
+    .footer-content p {
+        list-style-type: none;
+        font-size: 15px;
+    }
+    .footer-content a,
+    .footer-content a:visited,
+    .footer-content a:active,
+    .footer-content p {
+        color: var(--text-secondary);
+        text-decoration: none;
+        margin: 0.15rem 0;
+    }
+
+/* Utility Classes */
+
+.image-container > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+/* Home */
+
+.trees {
+    width: min-content;
+    margin: 0 auto;
+}
+    .trees h2 {
+        font-size: 2rem;
+    }
+    
+.tree-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 0;
+    width: min-content;
+    margin: 0 auto; 
+}
+
+.tree-card {
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 0.69rem;
+    list-style-type: none;
+}
+    .tree-card .image-container {
+        width: 14rem;
+        margin: 0 auto;
+    }
+    .tree-card .image-container :hover {
+        opacity: 65%;
+    }
+    .tree-card :focus-visible {
+        outline: none;
+    }
+    .tree-card a,
+    .tree-card a:visited,
+    .tree-card a:active {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .tree-card div {
+        display: block;
+    }
+    .tree-card .name {
+        color: var(--text-primary);
+        margin: 0.2rem 0 0.5rem;
+    }
+    .tree-card .binomen {
+        display: flex;
+        gap: 0.3rem;
+    }
+        .tree-card .binomen div {
+            background-color: var(--color1);
+            padding: 0.3rem 0.4rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-size: 0.8rem;
+        }
+        .tree-card .binomen :first-child {
+            background-color: var(--color2);
+        }
+
+/* Tree Bio Pages*/
+
+.tree-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 0.5rem solid var(--border-light);
+    border-radius: 0.38rem;
+    width: min-content;
+    margin: 0 auto;
+}
+    .tree-content .image-container {
+        border-right: 0.5rem solid var(--border-light);
+        width: 28.5rem;
+    }
+    .tree-content .tree-description {
+        font-size: 1.15rem;
+        padding: 1rem;
+        box-sizing: border-box;
+        width: 28.5rem;
+    }
+    .tree-description p {
+        padding-bottom: 1.75rem;
+        font-size: 1.20rem;
+    }
+
+.stats-container {
+    background-color: var(--highlight);
+    padding: 0.69rem;
+    border-radius: 0.5rem;
+}
+    .stats-container li {
+        list-style-type: none;
+    }
+    .stats-container ul {
+        margin: 0;
+        padding: 0;
+    }
+
+/* Resources */
+
+.resources {
+    font-size: 1.2rem;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0 8rem;
+}
+    .resources ul {
+        padding: 0;
+        margin: 0;
+    }
+    .resources li {
+        margin-bottom: 0.5rem;
+        padding: 1rem 0;
+    }
+    .resources a,
+    .resources a:visited,
+    .resources a:active,
+    .resources a:focus-visible {
+        text-decoration: none;
+        color: var(--text-primary);
+    }
