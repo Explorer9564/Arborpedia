@@ -76,7 +76,6 @@ body {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: nowrap;
-        /*gap: 5rem;*/
     }
     .footer-content h3 {
         margin: 0.3rem 0;
